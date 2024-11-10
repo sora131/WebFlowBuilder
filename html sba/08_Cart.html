@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="cart.css">
+
+    
+</head>
+<body>
+
+    <!--    navigation bar adn dropdown meun    -->
+    <nav>
+        <h1><p>Welcome</p></h1>
+        <ul>
+            <li><a href="01_index_main.html">Home</a></il>
+            <li><a href="#">Products ▼</a>
+                <ul>
+                    <li><a href="04_camera_page.html">Camera</a></li>
+                    <li><a href="05_lenes_page.html">Lens</a></li>
+                    <li><a href="06_other(page).html">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="08_Cart.html">Cart</a></il>
+            <li>
+                <a><span class="bgm" onclick="toggleAudio()">Background Music</span></a>
+                <audio id="myAudio">
+                    <source src="./bgm/perfect background music.mp3">
+                </audio>
+            </li>
+        </ul>
+        
+    </nav>
+    
+    <!-- booking form -->
+
+    <div class="head">
+        <h1 align="center" id="head1">Thank you for trusting us.</h1>
+        <h1 align="center" id="head1">We are committed to offering you the highest quality camera rental experience!</h1>
+    </div>
+
+    <form>
+        <div class="content">
+            <label>Name:</label> <br><br>
+            <input type="name" name="name" placeholder="Please enter your name" class="box">
+            <br>
+            <br>
+            <div class="form_2">
+                <label>Contact:</label> 
+                <select id="option">
+                    <option name="Please choose your preferred contact method">Please choose your preferred contact method</option>
+                    <option value="IG name">IG name</option>
+                    <option value="FB name">FB name</option>
+                    <option value="Email">Email</option>
+                    <option value="Phone Number">Phone Number</option>
+                </select> <br><br>
+                <input type="name" name="name" placeholder="Please enter your contact information(IG/FB/Email/phone number)" class="box"> 
+                <br><br>
+                <input type="name" name="name" placeholder="Please enter again your contact information" class="box"> 
+                <br><br>
+                <label>Phone number:</label>    <br><br>
+                <input type="number" name="name" placeholder="Enter your phone number (optional)" class="box"> 
+            </div>
+        </div>
+        <br>
+        <label class="op"><h1 class="t_in_f">What equipment would you like to choose</h1></label>
+        <br>
+        <div class="c2">
+            <input type="checkbox" name="checkbox" class="larger"><label>Canon EOS 70D</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Canon EOS 5D Mark IV</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Canon EOS R5</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Canon EOS R6 MK II</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Canon AE-1 Program (film camera)</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Canon EF70-200mm f/2.8L IS III USM</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Canon EF16-35mm f/2.8L III USM</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Sony α6700</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Sony a7 IV</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Sony α7R V</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Sony a7 iii</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Sony FE 70-200mm F2.8 GM OSS II SEL70200GM2</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Sony FE 24-70mm F2.8 GM II SEL2470GM2</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Nikon Z 6II</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Nikon Z50</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Nikon D850</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Nikon Z fc</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Nikon AF-S NIKKOR 70-200MM F/2.8E FL ED VR</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Nikon AF-S DX ZOOM-NIKKOR 17-55MM F/2.8G IF-ED</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Light Stick</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Lighting Kit</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Green screen (portable type)</label> <br><br>
+        </div>
+        <button id="submitBtn"><h3>Submit</h3></button>
+    </form>
+
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>

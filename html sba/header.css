@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    background-size: cover;
+}
+
+/*navigation bar and dropdown meun*/
+
+nav{
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    background-image: url(./ICT_sba_pic/1738642.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav p{
+    padding: 0px 30px;
+    font-family: arial;
+    color:white;
+    font-size: 8vh;
+    line-height: 55px;
+    float: left;
+    margin-top: 3.5vh;
+    
+}
+
+nav ul{
+    float: right;
+    margin-top: 3vh;
+
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    transition-duration: 350ms;
+}
+
+nav ul li a{
+    padding: 22px 14px;
+    font-family: arial;
+    display: block;
+    color: white;
+    font-size: 2vh;
+    text-decoration: none;
+}
+
+nav ul li ul{
+    padding: 10px;
+    display: none;
+    position: absolute;
+    background-color: rgb(62, 151, 211);
+    border-radius: 0px 0px 8px 8px;
+    margin-top: 0px;
+
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul a {
+    padding: 12px 14px;
+}
+
+nav ul li ul a {
+    border-radius: 5px;
+}
+
+nav ul li ul a:hover {
+    background-color: rgb(81, 112, 252);
+}
+
+nav ul li:hover{
+    background-color:  rgb(81, 112, 252);
+    border-radius: 10px;
+}
+
+.int{
+    font-size: 45px;
+}
+
+.horizontal {
+    width: 100;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+/*music*/
+.bgm{
+    cursor: pointer;
+}
+
+
+/*videos import*/
+
+.back{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.back2{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    margin-top: 11vh;
+}
+
+/*pic inport*/
+
+.abc{
+    margin-top: 3vh;
+}
+
+.pic .pic1 {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.pic .pic1 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.d70{
+    max-width: 100%;
+    height: auto;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*footer*/
+
+.page{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.page p{
+    padding: 0px 30px;
+    font-family: arial;
+    color:white;
+    font-size: 35px;
+    line-height: 55px;
+    float: left;
+    margin-top: 20px;
+}
+
+.page ul{
+    float: right;
+    margin-top: 20px;
+}
+
+.page ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    transition-duration: 350ms;
+}
+
+.page ul li a{
+    padding: 22px 14px;
+    font-family: arial;
+    display: block;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.page ul li:hover ul{
+    display: block;
+}
+
+.page ul li:hover{
+    background-color:  rgb(129, 129, 129);
+    border-radius: 10px;
+}
+
+/*animation*/
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1{
+    font-size: 90px;
+}
+
+.hi{
+    font-size: 45px;
+    color: rgb(216, 62, 236);
+    font-weight: 600;
+    margin-left: 60vh;
+}
+
+.anime-1{
+    margin-top: 15vh;
+    margin-left: 110vh;
+}
+
+.anime-2{
+    margin-top: 12vh;
+    margin-right: 100vh;
+}
+
+.yo{
+    color: rgb(0, 23, 99);
+    font-weight: 200;
+    font-size: 5vh;
+    margin-left: 6vh;
+}
+
+.here{
+    color: rgb(143, 248, 248);
+    font-size: 2vh;
+}
+
+section .animate{
+    filter: blur(10px);
+    transition: 1.55s;
+}
+
+section.show-animate .animate{
+    filter: blur(0);
+}
+
+.sec-1 .animate{
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.sec-1.show-animate .animate{
+    transform: translateX(-500%);
+}
+
+.sec-2 .animate{
+    transform: translateX(120%);
+}
+
+.sec-2.show-animate .animate{
+    transform: translateX(0);
+}
+
+.sec-3 .animate{
+    transform: scale(.1);
+}
+
+.sec-3.show-animate .animate{
+    transform: scale(1);
+}
+
+.mopic{
+    display: none;
+}
+
+/*nav bar*/
+
+.nav2{
+    margin-top: 24vh;
+}
+    
+.en{
+    font-size: 45px;
+    color: white;    
+}
+    
+.nav2{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+/*user friendly (laptop)*/
+
+@media screen and (1025px <= width <= 1200px) {
+    
+    .mopic{
+        display: none;
+    }
+
+    /*video*/
+    
+    video {
+        width: 341.6px;
+    }
+    
+    .abc{
+        margin-top:50vh;
+    }
+
+    /*footer*/
+    
+    .page{
+        width: 100%;
+        height: 170px;
+        background-color: black;
+    }
+    
+}
+
+/*user friendly (ipad)*/
+
+@media screen and (481px <= width <= 1024px) {
+
+    .mopic{
+        display: none;
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 75vh;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    .hi{
+        font-size: 24px;
+        color: rgba(133, 3, 3, 0.792);
+        font-weight: 600;
+        margin-left: 37.625vh;
+    }
+
+    .ipadpic{
+        width: 100%;
+        height: 300px;
+        background-image: url(./ICT_sba_pic/1738642.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .anime-1{
+        margin-top: 5vh;
+        margin-left: 59vh;
+    }
+
+    .anime-2{
+        margin-top: 5vh;
+        margin-right: 100vh;
+    }
+
+    .yo{
+        color: rgb(180, 4, 250);
+        font-weight: 550;
+        font-size: 30px;
+    }
+
+    /*video*/
+    video {
+        width: 100%;
+    }
+
+    nav{
+        width: 100% auto;
+        height: 500px;
+        background-color: black;
+        background-image: url(./ICT_sba_pic/1738642.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    
+    .page{
+        width: 100%;
+        height: 230px;
+        background-color: black;
+    }
+    
+    nav{
+        width: 100%;
+        height: 100px;
+        background-image: url(./ICT_sba_pic/1738642.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    }
+}
+
+/*user friendly (mobile)*/
+
+@media screen and (0px <= width <= 480px) {
+    
+
+
+    .int{
+        font-size: 3vh;
+    }
+    
+    section{
+        display: none;
+    }
+
+    .mopic{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background-image: url(./ICT_sba_pic/pexels-photo-225157.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .motext{
+        font-size: 5vh;
+        margin-top: 6vh;
+    }
+
+    nav{
+        width: 100%;
+        height: 26vh;
+        background-color: black;
+        background-image: url(./ICT_sba_pic/1738642.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    nav p{
+        padding: 0px 30px;
+        font-family: arial;
+        color:white;
+        font-size: 3.5vh;
+        line-height: 55px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .page{
+        width: 100%;
+        height: 30vh;
+        background-color: black;
+    }
+}
